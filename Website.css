@@ -51,12 +51,6 @@ audio {
     float: right;
 }
 
-.logo {
-    position: top;
-    height: 10px;
-    width: 10px;
-}
-
 .column {
     float: left;
     width: 40%;
@@ -71,7 +65,7 @@ audio {
 }
 
 .column iframe {
-    width: 600px;
+    width: 700px;
     height: 400px;
 }
 
@@ -101,6 +95,7 @@ audio {
     text-align: center;
     top: 50%;
     width: 100%;
+    line-height: 50px;
 }
 
 .Home {
@@ -138,5 +133,16 @@ audio {
   
 .fa-instagram {
     color: white;
+}
+
+.AboutMe a{
+    font-size: 100px
+}
+
+img{
+    float: right;
+    margin-right: 100px;
+    height: 200px;
+    width: 300px;
 }
   
