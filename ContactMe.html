@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+
+<title>My Website</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" /> 
+ <link rel="stylesheet" type="text/css" href="Website.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--links to logos that I need for my code-->
+ <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script> <!--Got this online for an icon-->
+ <script src="website.js"></script>
+ 
+</div>
+
+</head>
+    <body>
+        <img id="img1" onmouseover="setNewImage()" onmouseout="setOldImage()" src="Fontys-Logo.png"> <!--This is for the easter egg-->
+    <nav>
+        <!--This is the code for my navigation bar-->
+        <div id="menu">
+            <div class="togglebutton" onclick="toggleMenu(this)">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="list"> 
+                <div class="item">         
+                    <a href="index.html">Home</a>
+                </div>         
+                <div class="item">         
+                    <a href="Assignments.html">Assignments</a>
+                </div>
+                <div class="item">
+                    <a href="ContactMe.html">Contact Me</a>
+                </div>
+                <div class="item">
+                    <a href="game.html">Football game</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--The About Me page info-->
+    <div class="AboutMe">
+        <h1>
+            <a href="https://www.instagram.com/tdiddy020105/" class="fa fa-instagram"></a>
+            <p>
+                Contact me here <button class="button" onclick="toggleContactMe()">Press here!</button>
+            </p>
+        </h1>
+        </div>
+        
+        <!--My code for the footer-->
+        <div class="footer">
+            <p>Credit: Thomas Dielesen</p>
+        </div>
+    
+    <div class="gif">
+        <iframe src="https://giphy.com/embed/U2ivlljp6AvBK"frameBorder="0"></iframe>
+    </div>
+
+    <div class="popup">
+        <div class="popup-content">
+            <i class="fas fa-times" onclick="toggleContactMe()"></i> <!--This is for the close button of the popup-->
+            <input type="text" placeholder="First Name" id="firstname" />
+            <input type="text" placeholder="Last Name" id="lastname" />
+            <input type="text" placeholder="Email" id="email" />
+            <input type="text" placeholder="Message here" id="message"/>
+            <input type="button" value="Submit" id="submit" onclick="Contact()"/>
+        </div>
+    </div>
+        
+    </body>
+
+    
+</html>

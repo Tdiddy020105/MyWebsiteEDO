@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+
+ <title>Football Game</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+ <link rel="stylesheet" type="text/css" href="Website.css">
+ <script src="website.js"></script>
+
+</head>
+
+    <body>
+            <img id="img1" onmouseover="setNewImage()" onmouseout="setOldImage()" src="Fontys-Logo.png"> <!--This is for the easter egg-->
+    <nav>
+        <!--This is the code for my navigation bar-->
+        <div id="menu">
+            <div class="togglebutton" onclick="toggleMenu(this)">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="list"> 
+                <div class="item">         
+                    <a href="index.html">Home</a>
+                </div>         
+                <div class="item">         
+                    <a href="Assignments.html">Assignments</a>
+                </div>
+                <div class="item">
+                    <a href="ContactMe.html">Contact Me</a>
+                </div>
+                <div class="item">
+                    <a href="game.html">Football game</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!--The Home page info-->
+    <div class="Home"> 
+
+        <canvas id="main_canvas" height="300" width="400"></canvas>
+        <script src="ball.js"></script>
+        <script src="game.js"></script>
+        <h1 id="title"></h1> <!--Where it's gonna show what key is being pressed-->
+        </div>
+
+        <!--My code for the footer-->
+    <div class="footer">
+        <p>Credit: Thomas Dielesen</p>
+    </div>
+
+    <div class="gif">
+        <iframe src="https://giphy.com/embed/U2ivlljp6AvBK"frameBorder="0"></iframe>
+    </div>
+
+    </body>
+
+</html>
