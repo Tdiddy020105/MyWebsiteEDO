@@ -4,29 +4,40 @@
 <head>
 
  <title>My Website</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1" /> 
  <link rel="stylesheet" type="text/css" href="Website.css">
+ <script src="website.js"></script>
 
 </head>
 
     <body>
-            <img src="Fontys-Logo.png">
+            <img id="img1" onmouseover="setNewImage()" onmouseout="setOldImage()" src="Fontys-Logo.png"> <!--This is for the easter egg-->
     <nav>
         <!--This is the code for my navigation bar-->
         <div id="menu">
-                <ul>
-                    <li>             
-                    <a href="Website.html">Home</a>            
-                    </li>           
-                    <li>         
-                    <a href="Assignments.html">Assignments</a>
-                    </li>
-                    <li>
-                    <a href="ContactMe.html">Contact Me</a>
-                    </li>
-                </ul>
+            <div class="togglebutton" onclick="toggleMenu(this)">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
+            <div class="list"> 
+                <div class="item">         
+                    <a href="index.html">Home</a>
+                </div>         
+                <div class="item">         
+                    <a href="Assignments.html">Assignments</a>
+                </div>
+                <div class="item">
+                    <a href="ContactMe.html">Contact Me</a>
+                </div>
+                <div class="item">
+                    <a href="game.html">Football game</a>
+                </div>
+            </div>
+        </div>
     </nav>
 
+    <!--The Home page info-->
     <div class="Home">
         <img src="Profile.jpg">
         <h1>
@@ -43,6 +54,7 @@
         </h1>
         </div>
 
+        <!--My code for the footer-->
     <div class="footer">
         <p>Credit: Thomas Dielesen</p>
     </div>

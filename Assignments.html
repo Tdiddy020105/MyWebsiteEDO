@@ -4,8 +4,11 @@
 <head>
 
 <title>My Website</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" /> 
  <link rel="stylesheet" type="text/css" href="Website.css">
+ <script src="website.js"></script>
 
+ <!--A cool music player-->
  <div id ="music">
     <audio src="Flight%20Facilities%20ft%20Giselle%20_%20Crave%20you.mp3" controls>
     </audio>
@@ -18,21 +21,29 @@
     <nav>
         <!--This is the code for my navigation bar-->
         <div id="menu">
-                <ul>
-                    <li>             
-                    <a href="index.html">Home</a>            
-                    </li>           
-                    <li>         
-                    <a href="Assignments.html">Assignments</a>
-                    </li>
-                    <li>
-                    <a href="ContactMe.html">Contact Me</a>
-                    </li>
-                </ul>
-                  
+            <div class="togglebutton" onclick="toggleMenu(this)">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
+            <div class="list"> 
+                <div class="item">         
+                    <a href="index.html">Home</a>
+                </div>         
+                <div class="item">         
+                    <a href="Assignments.html">Assignments</a>
+                </div>
+                <div class="item">
+                    <a href="ContactMe.html">Contact Me</a>
+                </div>
+                <div class="item">
+                    <a href="game.html">Football game</a>
+                </div>
+            </div>
+        </div>
     </nav>
     
+    <!--This code is to display all of the assignments-->
         <div class="main">
             <div class="column">
                 <iframe src="https://pknar.github.io/edo-ux/"></iframe>
@@ -48,6 +59,7 @@
             </div>
           </div>
 
+          <!--My code for the footer-->
           <div class="footer">
             <p>Credit: Thomas Dielesen</p>
         </div>
